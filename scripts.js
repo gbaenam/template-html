@@ -1,13 +1,10 @@
 modal = document.getElementById('modal')
 
-const openModal = e => {
+document.querySelector('.container').addEventListener('click', e => {
+
     e.stopPropagation()
     const id = e.target.id
-
-    if (e.target.id) {
-        modal.style.opacity = 1
-        modal.style.visibility = 'visible'
-    }
+    if (e.target.id) modal.setAttribute('style', 'opacity: 1; visibility: visible' )
 
     switch (id) {
         case 'button-one':
@@ -22,9 +19,7 @@ const openModal = e => {
             modal.appendChild(document.getElementById('template-3').content.cloneNode(true))
         break;
     }
-}
-
-document.querySelector('.container').addEventListener('click', openModal)
+})
 
 modal.addEventListener('click', e => {
     modal.style.visibility = 'hidden'
