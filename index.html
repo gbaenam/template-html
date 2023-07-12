@@ -9,11 +9,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Template HTML</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reprehenderit aliquid vitae fugit, minima esse eum odit adipisci voluptate veniam temporibus sapiente facilis illo, dicta itaque ducimus a! Sit placeat odio aliquid nemo laborum tempore hic eligendi perspiciatis iste ducimus eos nam vero soluta nihil fugit molestias repellat, quae voluptatibus quam eveniet a. Aut quaerat perferendis nemo impedit aperiam. Beatae architecto dolor, corrupti pariatur voluptatibus aperiam, cupiditate quos sint amet maiores quam nihil ut voluptas! Non sit dolor est, dignissimos quis velit ipsam dolore assumenda quae deleniti id dolorem temporibus voluptatibus et illum? Quidem adipisci voluptatum doloremque animi sint laudantium?</p>
-        <button class="button-one">Click Aqu&iacute;</button>
-        <button class="button-two">Click Aqu&iacute;</button>
-        <button class="button-three">Click Aqu&iacute;</button>
+        <h1 class="title">Template HTML</h1>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reprehenderit aliquid vitae fugit, minima esse eum odit adipisci voluptate veniam temporibus sapiente facilis illo, dicta itaque ducimus a! Sit placeat odio aliquid nemo laborum tempore hic eligendi perspiciatis iste ducimus eos nam vero soluta nihil fugit molestias repellat, quae voluptatibus quam eveniet a. Aut quaerat perferendis nemo impedit aperiam. Beatae architecto dolor, corrupti pariatur voluptatibus aperiam, cupiditate quos sint amet maiores quam nihil ut voluptas! Non sit dolor est, dignissimos quis velit ipsam dolore assumenda quae deleniti id dolorem temporibus voluptatibus et illum? Quidem adipisci voluptatum doloremque animi sint laudantium?</p>
+        <button class="button" id="button-one">Modal Uno</button>
+        <button class="button" id="button-two">Modal Dos</button>
+        <button class="button" id="button-three">Modal Tres</button>
     </div>
+    <div>
+        <template id="template-one">
+            <div class="template-content">
+                <h2 class="template-text">Contenido del Modal Uno</h2>
+                <p class="template-close">X</p>
+            </div>
+        </template>
+        <template id="template-two">
+            <div class="template-content">
+                <h2 class="template-text">Contenido del Modal Dos</h2>
+                <p class="template-close">X</p>
+            </div>
+        </template>
+        <template id="template-three">
+            <div class="template-content">
+                <h2 class="template-text">Contenido del Modal Tres</h2>
+                <p class="template-close">X</p>
+            </div>
+        </template>
+    </div>
+    <div class="modal" id="modal"></div>
+    <script src="scripts.js"></script>
 </body>
 </html>
