@@ -4,7 +4,7 @@ document.querySelector('.container').addEventListener('click', e => {
 
     e.stopPropagation()
     const id = e.target.id
-    if (e.target.id) modal.setAttribute('style', 'opacity: 1; visibility: visible' )
+    if (e.target.id) modal.setAttribute('style', 'opacity: 1; visibility: visible')
 
     switch (id) {
         case 'button-one':
@@ -22,8 +22,8 @@ document.querySelector('.container').addEventListener('click', e => {
 })
 
 modal.addEventListener('click', e => {
-    modal.style.visibility = 'hidden'
     document.querySelector('.template-content').remove()
+    modal.setAttribute('style', 'opacity: 0; visibility: hidden' )
 })
 
 
